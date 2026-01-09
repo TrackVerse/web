@@ -59,3 +59,8 @@ postgres
 
 # prisma
 src/infra/prisma/generated
+
+# Lock files
+
+bun.lock
+pnpm-lock.yaml
