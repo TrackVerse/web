@@ -121,3 +121,31 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes gradientShift {
+          0%, 100% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+        }
+        
+        @keyframes twinkle {
+          0%, 100% {
+            opacity: 0.3;
+            transform: scale(0.8);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        
+        .animate-gradient-shift {
+          animation: gradientShift 15s ease infinite;
+        }
+        
+        .animate-twinkle {
+          animation: twinkle linear infinite;
+        }
