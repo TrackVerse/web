@@ -13,7 +13,7 @@ export function Layout({ title, children }: LayoutProps) {
 	return (
 		<>
 			<Helmet>
-				<title>{title} | TrackVerse</title>
+				<title>{title} | TrackGeek</title>
 			</Helmet>
 
 			<div className="flex flex-col min-h-full">
