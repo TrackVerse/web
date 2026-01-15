@@ -27,7 +27,7 @@ export function Layout({ title, children }: LayoutProps) {
 					</div>
 					<div className="flex items-center justify-center gap-3">
 						<Button>
-							<Heart fill="red" />
+							<Heart color="red" fill="red" />
 							Donate
 						</Button>
 						<Button>
