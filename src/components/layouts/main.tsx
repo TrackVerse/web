@@ -1,5 +1,6 @@
 import { Bell, Heart, LogIn, Menu } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
@@ -9,6 +10,8 @@ interface LayoutProps {
 }
 
 export function Layout({ title, children }: LayoutProps) {
+	const { t, i18n } = useTranslation();
+
 	return (
 		<>
 			<Helmet>
@@ -28,20 +31,18 @@ export function Layout({ title, children }: LayoutProps) {
 					<div className="flex items-center justify-center gap-3">
 						<Button variant={"outline"} className="">
 							<Heart color="red" fill="red" />
-							Donate
+							{t("common:donate")}
 						</Button>
 						<Button>
 							<Bell fill="" />
 						</Button>
 						<Button>
 							<LogIn />
-							Login
+							{t("auth:login")}
 						</Button>
 					</div>
 				</header>
-				<main className="flex flex-col px-5 py-5">
-					{children}
-				</main>
+				<main className="flex flex-col px-5 py-5">{children}</main>
 			</div>
 		</>
 	);
