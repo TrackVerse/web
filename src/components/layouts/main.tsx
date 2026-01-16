@@ -15,8 +15,8 @@ export function Layout({ title, children }: LayoutProps) {
 				<title>{title} | TrackGeek</title>
 			</Helmet>
 
-			<div className="bg-neutral-900 flex flex-col min-h-full">
-				<header className="bg-black w-full h-14 flex items-center justify-between px-5 py-2">
+			<div className="bg-background flex flex-col min-h-screen">
+				<header className="bg-card border-b border-border w-full h-14 flex items-center justify-between px-5 py-2">
 					<div className="flex items-center justify-center gap-3">
 						<Button>
 							<Menu />
@@ -26,12 +26,12 @@ export function Layout({ title, children }: LayoutProps) {
 						</Link>
 					</div>
 					<div className="flex items-center justify-center gap-3">
-						<Button>
+						<Button variant={"outline"} className="">
 							<Heart color="red" fill="red" />
 							Donate
 						</Button>
 						<Button>
-							<Bell fill="white" />
+							<Bell fill="" />
 						</Button>
 						<Button>
 							<LogIn />
@@ -39,7 +39,7 @@ export function Layout({ title, children }: LayoutProps) {
 						</Button>
 					</div>
 				</header>
-				<main className="flex h-screen flex-col items-center justify-center">
+				<main className="flex flex-col px-5 py-5">
 					{children}
 				</main>
 			</div>

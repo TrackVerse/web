@@ -10,6 +10,8 @@ import {
 import { HomePage } from "./pages/home";
 import { LoginPage } from "./pages/login";
 
+import "../i18n.ts";
+
 export function Routes() {
 	const protectRoutes = [
 		{
