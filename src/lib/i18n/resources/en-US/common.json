@@ -1,15 +1,8 @@
 {
+	"example": "This is an example string for {{name}}.",
 	"yes": "yes",
 	"no": "no",
 	"donate": "Donate",
-  "legal": "Legal",
-  "socials": "Social Networks",
-  "community": "Community",
-  "addData": "Add Data",
-  "privacy": "Privacy Policy",
-  "terms": "Terms of Service",
-  "about": "About TrackGeek",
-  "translate": "Translate",
 	"languages": {
 		"ptBR": "Portuguese (Brazil)",
 		"ptPT": "Portuguese (Portugal)",
