@@ -33,15 +33,7 @@ export function FeedReview({ profile, item }: feedReviewProps) {
 	const { i18n } = useTranslation();
 	return (
 		<div className="flex w-full h-50">
-			<Link to={"/"} className="w-auto min-w-16 shrink-0">
-				<img
-					src={item.coverURL}
-					className="h-full object-cover rounded-l-2xl aspect-3/4"
-					alt=""
-				/>
-			</Link>
-
-			<div className="flex flex-1 px-4 py-3 bg-card border-y border-r border-border rounded-r-2xl justify-between items-start">
+			<div className="flex flex-1 px-4 py-3 bg-card border border-border rounded-2xl justify-between items-start">
 				<div className="flex flex-col items-start justify-between gap-3 ml-0 shrink-0 h-full">
 					<div className="flex flex-col">
 						<Link

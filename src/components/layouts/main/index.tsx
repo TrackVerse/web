@@ -17,9 +17,11 @@ export function Layout({ title, children }: LayoutProps) {
 
 			<div className="bg-background flex flex-col min-h-screen">
 				<Header />
-        
-				<main className="flex flex-col grow px-5 py-5">{children}</main>
-        
+
+				<main className="flex flex-col grow py-5 px-4 max-w-7xl w-full flex-1 mx-auto">
+					{children}
+				</main>
+
 				<Footer />
 			</div>
 		</>
