@@ -30,7 +30,7 @@ interface feedReviewProps {
 }
 
 export function FeedReview({ profile, item }: feedReviewProps) {
-	const { i18n } = useTranslation();
+	const { t, i18n } = useTranslation();
 	return (
 		<div className="flex w-full h-50">
 			<div className="flex flex-1 px-4 py-3 bg-card border border-border rounded-2xl justify-between items-start">
@@ -83,9 +83,11 @@ export function FeedReview({ profile, item }: feedReviewProps) {
 							})}
 						</div>
 
-						<div className="flex gap-4 text-xs">
+						<div className="flex gap-2 text-xs">
 							<div className="flex items-center gap-1">
-								<span className="text-muted-foreground">Gameplay:</span>
+								<span className="text-muted-foreground">
+									{t("feed:criteries.gameplay")}:
+								</span>
 								<div className="flex">
 									{[...Array(5)].map((_, index) => {
 										const ratingValue = item.criteries.gameplay;
@@ -124,7 +126,9 @@ export function FeedReview({ profile, item }: feedReviewProps) {
 							</div>
 							<p>•</p>
 							<div className="flex items-center gap-1">
-								<span className="text-muted-foreground">Story:</span>
+								<span className="text-muted-foreground">
+									{t("feed:criteries.story")}:
+								</span>
 								<div className="flex">
 									{[...Array(5)].map((_, index) => {
 										const ratingValue = item.criteries.story;
@@ -163,7 +167,9 @@ export function FeedReview({ profile, item }: feedReviewProps) {
 							</div>
 							<p>•</p>
 							<div className="flex items-center gap-1">
-								<span className="text-muted-foreground">Graphics:</span>
+								<span className="text-muted-foreground">
+									{t("feed:criteries.graphics")}:
+								</span>
 								<div className="flex">
 									{[...Array(5)].map((_, index) => {
 										const ratingValue = item.criteries.graphics;
@@ -202,7 +208,9 @@ export function FeedReview({ profile, item }: feedReviewProps) {
 							</div>
 							<p>•</p>
 							<div className="flex items-center gap-1">
-								<span className="text-muted-foreground">Soundtrack:</span>
+								<span className="text-muted-foreground">
+									{t("feed:criteries.soundtrack")}:
+								</span>
 								<div className="flex">
 									{[...Array(5)].map((_, index) => {
 										const ratingValue = item.criteries.soundtrack;
