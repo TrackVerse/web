@@ -13,11 +13,11 @@ export function HomePage() {
 
 	return (
 		<Layout title="Home">
-			<div className="flex gap-5">
-				<div className="flex flex-col w-2/3">
+			<div className="flex max-sm:flex-col gap-5">
+				<div className="flex flex-col md:w-2/3">
 					<Tabs defaultValue="following">
 						<div className="flex items-center justify-between gap-3 mb-2">
-							<TabsList className="w-2/4">
+							<TabsList className="md:w-2/4">
 								<TabsTrigger value="following">
 									{t("feed:following")}
 								</TabsTrigger>
@@ -35,7 +35,7 @@ export function HomePage() {
 						<TabsContent value="trending"></TabsContent>
 					</Tabs>
 				</div>
-				<div className="flex flex-col gap-4 w-1/3">
+				<div className="flex flex-col gap-4 md:w-1/3">
 					<StillWatching
 						items={[
 							{
