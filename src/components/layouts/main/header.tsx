@@ -140,7 +140,7 @@ export function Header() {
 						<Search />
 					</Button>
 				</Link>
-				<Link to="/donate">
+				<Link to="/donate" className="max-sm:hidden">
 					<Button variant={"outline"} className="">
 						<Heart color="red" fill="red" />
 						{t("common:donate")}
