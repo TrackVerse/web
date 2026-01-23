@@ -62,17 +62,17 @@
 	},
 	"types": {
 		"tv": "Телешоу",
-		"tv_plural": "Телешоу",
+		"tv_other": "Телешоу",
 		"movie": "Фильм",
-		"movie_plural": "Фильмы",
+		"movie_other": "Фильмы",
 		"game": "Игра",
-		"game_plural": "Игры",
+		"game_other": "Игры",
 		"manga": "Манга",
-		"manga_plural": "Манги",
+		"manga_other": "Манги",
 		"book": "Книга",
-		"book_plural": "Книги",
+		"book_other": "Книги",
 		"anime": "Аниме",
-		"anime_plural": "Аниме"
+		"anime_other": "Аниме"
 	},
 	"following": "Следующий",
 	"global": "Глобальный",

@@ -37,16 +37,16 @@
 	},
 	"types": {
 		"tv": "TV Show",
-		"tv_plural": "TV Shows",
+		"tv_other": "TV Shows",
 		"movie": "Movie",
-		"movie_plural": "Movies",
+		"movie_other": "Movies",
 		"game": "Game",
-		"game_plural": "Games",
+		"game_other": "Games",
 		"manga": "Manga",
-		"manga_plural": "Mangas",
+		"manga_other": "Mangas",
 		"book": "Book",
-		"book_plural": "Books",
+		"book_other": "Books",
 		"anime": "Anime",
-		"anime_plural": "Animes"
+		"anime_other": "Animes"
 	}
 }

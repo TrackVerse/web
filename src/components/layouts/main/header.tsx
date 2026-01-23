@@ -93,37 +93,37 @@ export function Header() {
 						<DropdownMenuItem asChild>
 							<Link to="/anime" className="cursor-pointer">
 								<Mountain size={18} className="text-white" />
-								{t("common:types.anime_plural")}
+								{t("common:types.anime_other")}
 							</Link>
 						</DropdownMenuItem>
 						<DropdownMenuItem asChild>
 							<Link to="/books" className="cursor-pointer">
 								<Book size={18} className="text-white" />
-								{t("common:types.book_plural")}
+								{t("common:types.book_other")}
 							</Link>
 						</DropdownMenuItem>
 						<DropdownMenuItem asChild>
 							<Link to="/games" className="cursor-pointer">
 								<Gamepad2 size={18} className="text-white" />
-								{t("common:types.game_plural")}
+								{t("common:types.game_other")}
 							</Link>
 						</DropdownMenuItem>
 						<DropdownMenuItem asChild>
 							<Link to="/tv" className="cursor-pointer">
 								<TvMinimalPlay size={18} className="text-white" />
-								{t("common:types.tv_plural")}
+								{t("common:types.tv_other")}
 							</Link>
 						</DropdownMenuItem>
 						<DropdownMenuItem asChild>
 							<Link to="/mangas" className="cursor-pointer">
 								<LibraryBig size={18} className="text-white" />
-								{t("common:types.manga_plural")}
+								{t("common:types.manga_other")}
 							</Link>
 						</DropdownMenuItem>
 						<DropdownMenuItem asChild>
 							<Link to="/movies" className="cursor-pointer">
 								<Clapperboard size={18} className="text-white" />
-								{t("common:types.movie_plural")}
+								{t("common:types.movie_other")}
 							</Link>
 						</DropdownMenuItem>
 					</DropdownMenuContent>
