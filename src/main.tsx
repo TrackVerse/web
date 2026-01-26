@@ -3,10 +3,14 @@ import "./global.css";
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
+import {
+	createBrowserRouter,
+	Navigate,
+	RouterProvider,
+} from "react-router-dom";
+import { BookDetails } from "./pages/book-details.tsx";
 import { HomePage } from "./pages/home";
-import { LoginPage } from "./pages/login";
-import { RootProvider } from './providers/root-provider.tsx';
+import { RootProvider } from "./providers/root-provider.tsx";
 
 export function Routes() {
 	const protectRoutes = [
@@ -18,8 +22,8 @@ export function Routes() {
 
 	const publicRoutes = [
 		{
-			path: "/login",
-			element: <LoginPage />,
+			path: "/book/:bookSlug",
+			element: <BookDetails />,
 		},
 	];
 
@@ -37,8 +41,8 @@ export function Routes() {
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>
-    <RootProvider>
-		  <Routes />
-    </RootProvider>
+		<RootProvider>
+			<Routes />
+		</RootProvider>
 	</StrictMode>,
 );
