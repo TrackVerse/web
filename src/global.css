@@ -108,3 +108,20 @@
     @apply text-white hover:text-accent
   }
 }
+
+::-webkit-scrollbar-track {
+  @apply bg-background
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar:horizontal {
+  @apply h-1;
+}
+
+/*Giving the thumb a gradient*/
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-4xl 
+}
