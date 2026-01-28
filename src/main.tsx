@@ -13,6 +13,7 @@ import {
 import { BookDetails } from "./pages/book-details.tsx";
 import { HomePage } from "./pages/home";
 import { RootProvider } from "./providers/root-provider.tsx";
+import { GameDetails } from "./pages/game-details.tsx";
 import { UserDetailsPage } from './pages/user-details.tsx';
 import { SettingsPage } from './pages/settings.tsx';
 import { useAuth } from './hooks/use-auth.tsx';
@@ -36,6 +37,10 @@ export function Routes() {
 			path: "/book/:bookSlug",
 			element: <BookDetails />,
 		},
+		{
+			path: "/game/:bookSlug",
+			element: <GameDetails />,
+    },
     {
 			path: "/user/:username",
 			element: <UserDetailsPage />,
