@@ -25,12 +25,13 @@ jobs:
           upload_sources: true 
           upload_translations: false
           download_translations: true
-          github_user_name: "github-actions[bot]"
-          github_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          github_user_name: "TrackGeekBot"
+          github_user_email: "256638171+TrackGeekBot@users.noreply.github.com"
           localization_branch_name: "feat/crowdin-sync"
           create_pull_request: true
           pull_request_title: "chore(i18n): update translations"
-          pull_request_body: "Translations synced from Crowdin"
+          pull_request_body: "Translations synced from Crowdin\n\n- Thanks to all contributors."
+          pull_request_reviewers: ['Kuriel23', 'izakdvlpr']
         env:
           GITHUB_TOKEN: ${{ secrets.GHT }}
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
