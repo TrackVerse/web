@@ -16,39 +16,41 @@ export function Footer() {
 					<Link to="/">
 						<img src="/logo.svg" alt="Logo" className="h-full w-45" />
 					</Link>
-					<p className="flex gap-1 items-center">
-						{t("common:providers.IGDBMetadata")}
-						<Link to="https://www.igdb.com" target="_blank">
-							<SiIgdb />
-						</Link>
-					</p>
-					<p className="flex gap-1 items-center">
-						{t("common:providers.TMDBMetadata")}
-						<Link to="https://www.themoviedb.org" target="_blank">
-							<SiThemoviedatabase />
-						</Link>
-					</p>
-					<p className="flex gap-1 items-center">
-						<Trans
-							i18nKey="common:providers.HardCoverMetadata"
-							components={{
-								1: <Link to="https://hardcover.app" target="_blank" />,
-							}}
-						/>
-					</p>
-					<p className="flex gap-1 items-center">
-						<Trans
-							i18nKey="common:providers.MALMetadata"
-							components={{
-								mal: (
-									<Link to="https://myanimelist.net" target="_blank">
-										<SiMyanimelist />
-									</Link>
-								),
-								jikan: <Link to="https://jikan.moe" target="_blank" />,
-							}}
-						/>
-					</p>
+					<div className="flex flex-col gap-1">
+						<p className="flex gap-1 items-center">
+							{t("common:providers.IGDBMetadata")}
+							<Link to="https://www.igdb.com" target="_blank">
+								<SiIgdb />
+							</Link>
+						</p>
+						<p className="flex gap-1 items-center">
+							{t("common:providers.TMDBMetadata")}
+							<Link to="https://www.themoviedb.org" target="_blank">
+								<SiThemoviedatabase />
+							</Link>
+						</p>
+						<p className="flex gap-1 items-center">
+							<Trans
+								i18nKey="common:providers.HardCoverMetadata"
+								components={{
+									1: <Link to="https://hardcover.app" target="_blank" />,
+								}}
+							/>
+						</p>
+						<p className="flex gap-1 items-center">
+							<Trans
+								i18nKey="common:providers.MALMetadata"
+								components={{
+									mal: (
+										<Link to="https://myanimelist.net" target="_blank">
+											<SiMyanimelist />
+										</Link>
+									),
+									jikan: <Link to="https://jikan.moe" target="_blank" />,
+								}}
+							/>
+						</p>
+					</div>
 				</div>
 
 				<div className="flex max-sm:flex-col gap-8 lg:gap-12 justify-between w-1/2">
